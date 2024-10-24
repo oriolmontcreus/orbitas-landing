@@ -2,6 +2,7 @@
 import Ripple from "@/components/Ripple";
 import { ButtonBgShine } from "../components/ButtonBgShine";
 import Layout from "../layouts/Layout.astro";
+import { TextParallaxContent } from "@/components/FeaturesParallax";
 ---
 
 <Layout title="Welcome to Orbitas.">
@@ -70,6 +71,38 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 		</section>
+		
+		<TextParallaxContent
+		client:visible
+		imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWxlfHx8fGVufDB8fHx8fA%3D%3D"
+		subheading="Collaborate"
+		heading="Built for all of us."
+	>
+		<div class="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+			<h2 class="col-span-1 text-3xl font-bold md:col-span-4">
+				Why Choose Orbitas?
+			</h2>
+			<div class="col-span-1 md:col-span-8">
+				<ul class="list-disc pl-5 space-y-4 text-xl text-neutral-600 md:text-2xl">
+					<li>
+						<strong>Project Publication and Discovery:</strong> Publish your ideas and explore innovative projects across various fields.
+					</li>
+					<li>
+						<strong>Direct Connection:</strong> Engage directly with like-minded creators and collaborators globally.
+					</li>
+					<li>
+						<strong>Open Source Focus:</strong> Community-driven, with an emphasis on open source initiatives.
+					</li>
+					<li>
+						<strong>Multidisciplinary Support:</strong> Welcome diverse disciplines and project types for holistic growth.
+					</li>
+				</ul>
+				<button class="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit mt-8">
+					Join Us
+				</button>
+			</div>
+		</div>
+	</TextParallaxContent>
 
 		<!-- How It Works Section -->
 		<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
